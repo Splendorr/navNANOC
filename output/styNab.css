@@ -79,7 +79,7 @@ p {
 #quote_cycle {
   position: relative;
   top: 40px;
-  margin: 0 auto;
+  left: 162px;
   text-align: center; }
   #quote_cycle img {
     position: absolute;
@@ -94,9 +94,10 @@ p {
 #improves {
   position: absolute;
   left: 80px;
-  top: 330px;
+  top: 300px;
   color: #3a60ad;
-  font-size: 2.6em; }
+  font-size: 2.6em;
+  line-height: 2.6em; }
 
 #descrip1 {
   position: absolute;
