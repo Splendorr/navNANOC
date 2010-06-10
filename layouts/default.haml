@@ -6,4 +6,8 @@
     %link{:href => "/styNab.css", :type => "text/css", :rel => "stylesheet", :media => "screen"}
     
   %body
-    =yield
+    #mainContainer
+      #entire
+        %a{:href => "/index.html"}
+          %img{:src => "/i/logo.png", :alt => "Navigar Consulting, LLC"}
+        =yield
