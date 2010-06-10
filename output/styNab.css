@@ -37,6 +37,13 @@ body {
   .headerLogo a:active {
     background: url(i/logo.png) no-repeat scroll; }
 
+#navBar {
+  position: absolute;
+  right: 80px;
+  top: 80px; }
+  #navBar li {
+    display: inline; }
+
 p {
   color: #353535; }
   p a {
