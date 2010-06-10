@@ -75,3 +75,17 @@ p {
     p a:hover, p a:focus {
       color: white;
       background-color: blue; }
+
+#quote_cycle {
+  position: relative;
+  left: 200px;
+  margin-top: 40px; }
+  #quote_cycle img {
+    position: absolute;
+    z-index: 8;
+    opacity: 0; }
+    #quote_cycle img.active {
+      z-index: 10;
+      opacity: 1; }
+    #quote_cycle img.last-active {
+      z-index: 9; }
