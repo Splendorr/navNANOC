@@ -101,3 +101,30 @@ p
     &:hover, &:focus
       color: #FFF
       background-color: blue
+      
+#quote_cycle
+  position: relative
+  left: 200px
+  margin-top: 40px
+  img
+    position: absolute
+    z-index: 8
+    opacity: 0.0
+    &.active
+      z-index: 10
+      opacity: 1.0
+    &.last-active
+      z-index: 9
+      
+#improves
+  position: relative
+  left: 140px
+  top: 160px
+  color: !lightblue
+  font-size: 2.5em
+  
+#descrip1
+  position: relative
+  left: 140px
+  top: 200px
+  
