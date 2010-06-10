@@ -13,17 +13,6 @@ body
   line-height: 18px
   width: 960px
   
-a
-  text-decoration: underline
-  padding: 4px 3px 2px 3px
-  margin: -4px -3px -2px -3px
-  &:link, &:visited
-    color = !offblack
-    
-  &:hover, &:focus
-    color = #FFF
-    background-color = blue
-    
 #mainContainer
   width: 100%
   height: 100%
@@ -44,8 +33,9 @@ a
   
 .headerLogo
   position: relative
-  background: url(/i/logo.png) no-repeat scroll
-  margin-bottom: 100px
+  margin-left: 80px
+  margin-top: 20px
+  margin-bottom: 0px
   
   
   a
@@ -58,3 +48,17 @@ a
 
     &:active
       background: url(i/logo.png) no-repeat scroll
+      
+p
+  color: !offblack
+  
+  a
+    text-decoration: underline
+    padding: 4px 3px 2px 3px
+    margin: -4px -3px -2px -3px
+    &:link, &:visited
+      color = !offblack
+
+    &:hover, &:focus
+      color = #FFF
+      background-color = blue
