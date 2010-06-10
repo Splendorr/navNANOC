@@ -4,6 +4,8 @@ title: Stylesheet for new Navigar site.
 
 !offblack = #353535
 !navfonts = "Georgia", "Minion Pro", "Times New Roman", "Times", "serif"
+!lightblue = #3a60ad
+!darkblue = #122b5e
 
 body
   background: #FFF
@@ -51,10 +53,22 @@ body
  
 #navBar
   position: absolute
-  right: 80px
+  right: 40px
   top: 80px
+  font-size: 1.2em
   li
     display: inline
+    a
+      text-decoration: none
+      padding: 10px 10px 10px 10px
+      margin: -4px -3px -2px -3px
+      &:link, &:visited
+        color = !darkblue
+
+      &:hover, &:focus
+        color = #FFF
+        background-color = !darkblue
+    
      
 p
   color: !offblack
