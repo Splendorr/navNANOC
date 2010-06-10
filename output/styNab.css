@@ -1,0 +1,24 @@
+body {
+  background: white;
+  font-family: Georgia, Minion Pro, Times New Roman, Times, serif;
+  color: #353535;
+  font-size: 14px;
+  line-height: 18px;
+  width: 960px; }
+
+a {
+  text-decoration: underline;
+  padding: 4px 3px 2px 3px;
+  margin: -4px -3px -2px -3px; }
+  a:link, a:visited {
+    color: #353535; }
+  a:hover, a:focus {
+    color: white;
+    background-color: blue; }
+
+#entire {
+  position: relative;
+  width: 960px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  text-align: center; }

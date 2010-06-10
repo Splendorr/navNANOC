@@ -1,5 +1,32 @@
 --- 
-title: A New Item
+title: Stylesheet for new Navigar site.
 ---
 
+!offblack = #353535
+!navfonts = "Georgia", "Minion Pro", "Times New Roman", "Times", "serif"
 
+body
+  background: #FFF
+  font-family: !navfonts
+  color = !offblack
+  font-size: 14px
+  line-height: 18px
+  width: 960px
+  
+a
+  text-decoration: underline
+  padding: 4px 3px 2px 3px
+  margin: -4px -3px -2px -3px
+  &:link, &:visited
+    color = !offblack
+    
+  &:hover, &:focus
+    color = #FFF
+    background-color = blue
+    
+#entire
+  position: relative
+  width: 960px
+  margin: 0 auto
+  padding-bottom: 20px
+  text-align: center
