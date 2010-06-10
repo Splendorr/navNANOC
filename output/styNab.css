@@ -91,9 +91,9 @@ p {
       z-index: 9; }
 
 #improves {
-  position: relative;
+  position: absolute;
   left: 140px;
-  top: 150px;
+  top: 330px;
   color: #3a60ad;
   font-size: 2.5em; }
 
