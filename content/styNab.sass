@@ -2,15 +2,15 @@
 title: Stylesheet for new Navigar site.
 ---
 
-!offblack = #353535
-!navfonts = "Georgia", "Minion Pro", "Times New Roman", "Times", "serif"
-!lightblue = #3a60ad
-!darkblue = #122b5e
+$offblack: #353535
+$navfonts: "Georgia", "Minion Pro", "Times New Roman", "Times", "serif"
+$lightblue: #3a60ad
+$darkblue: #122b5e
 
 body
   background: #FFF
-  font-family: !navfonts
-  color = !offblack
+  font-family: $navfonts
+  color: $offblack
   font-size: 14px
   line-height: 18px
   width: 960px
@@ -58,28 +58,46 @@ body
   font-size: 1.2em
   li
     display: inline
+    
+    
+  .navButton
     a
       text-decoration: none
-      padding: 10px 10px 10px 10px
+      padding: 8px 8px 8px 8px
       margin: -4px -3px -2px -3px
+      
       &:link, &:visited
-        color = !darkblue
+        color: $darkblue
 
       &:hover, &:focus
-        color = #FFF
-        background-color = !darkblue
+        color: #FFF
+        background-color: $darkblue
+
+  .contactButton
+    a
+      text-decoration: none
+      padding: 8px 8px 8px 8px
+      margin: -4px -3px -2px -3px
+      
+      &:link, &:visited
+        color: #FFF
+        background-color: $lightblue
+
+      &:hover, &:focus
+        color: #FFF
+        background-color: $darkblue
     
      
 p
-  color: !offblack
+  color: $offblack
   
   a
     text-decoration: underline
     padding: 4px 3px 2px 3px
     margin: -4px -3px -2px -3px
     &:link, &:visited
-      color = !offblack
+      color: $offblack
 
     &:hover, &:focus
-      color = #FFF
-      background-color = blue
+      color: #FFF
+      background-color: blue

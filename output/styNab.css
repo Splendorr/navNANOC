@@ -1,6 +1,6 @@
 body {
   background: white;
-  font-family: Georgia, Minion Pro, Times New Roman, Times, serif;
+  font-family: "Georgia", "Minion Pro", "Times New Roman", "Times", "serif";
   color: #353535;
   font-size: 14px;
   line-height: 18px;
@@ -44,15 +44,25 @@ body {
   font-size: 1.2em; }
   #navBar li {
     display: inline; }
-    #navBar li a {
-      text-decoration: none;
-      padding: 10px 10px 10px 10px;
-      margin: -4px -3px -2px -3px; }
-      #navBar li a:link, #navBar li a:visited {
-        color: #122b5e; }
-      #navBar li a:hover, #navBar li a:focus {
-        color: white;
-        background-color: #122b5e; }
+  #navBar .navButton a {
+    text-decoration: none;
+    padding: 8px 8px 8px 8px;
+    margin: -4px -3px -2px -3px; }
+    #navBar .navButton a:link, #navBar .navButton a:visited {
+      color: #122b5e; }
+    #navBar .navButton a:hover, #navBar .navButton a:focus {
+      color: white;
+      background-color: #122b5e; }
+  #navBar .contactButton a {
+    text-decoration: none;
+    padding: 8px 8px 8px 8px;
+    margin: -4px -3px -2px -3px; }
+    #navBar .contactButton a:link, #navBar .contactButton a:visited {
+      color: white;
+      background-color: #3a60ad; }
+    #navBar .contactButton a:hover, #navBar .contactButton a:focus {
+      color: white;
+      background-color: #122b5e; }
 
 p {
   color: #353535; }
