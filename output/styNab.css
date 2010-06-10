@@ -93,24 +93,39 @@ p {
 #improves {
   position: relative;
   left: 140px;
-  top: 160px;
+  top: 150px;
   color: #3a60ad;
   font-size: 2.5em; }
 
 #descrip1 {
   position: absolute;
   left: 140px;
-  top: 400px;
+  top: 390px;
   width: 500px; }
 
 #descrip2 {
   position: absolute;
   right: 64px;
-  top: 600px;
-  width: 500px;
+  top: 570px;
+  width: 480px;
   text-align: right; }
 
 .descripText {
-  font-size: 2em;
+  font-size: 1.9em;
   line-height: 1.1em;
   color: #353535; }
+
+.navigarDef {
+  position: absolute;
+  left: 140px;
+  top: 570px;
+  width: 250px;
+  font-style: italic;
+  text-align: left;
+  color: #373737;
+  background-color: white;
+  padding: 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: solid #122b5e 3px; }
