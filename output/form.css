@@ -1,5 +1,7 @@
 #contact_form		  { width:600px;
                         position:relative; top:400px; left:90px}
+
+p					  { float: right;}
                           
 form fieldset	      { font-family:Georgia, Arial, Helvetica, sans-serif; font-size:0.8em; color: 909090;
 						margin:0px 0px 20px 0px; width:578px; position:relative;
@@ -31,6 +33,3 @@ input.button		  { position:absolute; top:460px; left:0px;
    						margin: 0px 0px 10px 0px; }
 
 input.button:hover	  { background:#505050 none repeat scroll 0% 0%; color:white; }
-#message			  { width:300px;margin:115px 0px 0px 50px; }
-#message h2			  { font-size:3.0em;color:black; }
-#message p			  { color:#505050;margin:5px 0px; }
