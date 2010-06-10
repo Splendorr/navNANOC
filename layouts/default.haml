@@ -1,6 +1,9 @@
 %html
   %head
-    %title
+    %title= @item[:title] + " :: Navigar Consulting :: " + @item[:title]
+    
+    %link{:href => "/reset.css", :type => "text/css", :rel => "stylesheet", :media => "screen"}
+    %link{:href => "/styNab.css", :type => "text/css", :rel => "stylesheet", :media => "screen"}
     
   %body
     =yield
