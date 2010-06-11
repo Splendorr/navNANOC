@@ -21,7 +21,7 @@ body {
   position: relative;
   width: 960px;
   margin: 0 auto;
-  padding-bottom: 1000px;
+  padding-bottom: 0px;
   text-align: left; }
 
 .headerLogo {
@@ -39,6 +39,8 @@ body {
 
 #navBar {
   position: absolute;
+  text-align: right;
+  width: 600px;
   right: 20px;
   top: 80px;
   font-size: 1.2em; }
@@ -76,10 +78,15 @@ p {
       color: white;
       background-color: blue; }
 
+#pageSpecific {
+  position: relative;
+  height: 100%;
+  width: 960px; }
+
 #quote_cycle {
   position: relative;
-  top: 40px;
-  left: 162px;
+  top: 0px;
+  left: 0px;
   text-align: center; }
   #quote_cycle img {
     position: absolute;
@@ -92,23 +99,22 @@ p {
       z-index: 9; }
 
 #improves {
-  position: absolute;
+  position: relative;
   left: 80px;
-  top: 300px;
+  top: 0px;
   color: #3a60ad;
   font-size: 2.6em;
   line-height: 2.6em; }
 
 #descrip1 {
-  position: absolute;
+  position: relative;
   left: 80px;
-  top: 390px;
-  width: 500px; }
+  top: 0px;
+  width: 520px; }
 
 #descrip2 {
-  position: absolute;
+  position: relative;
   right: 80px;
-  top: 570px;
   width: 480px;
   text-align: right; }
 
@@ -118,10 +124,11 @@ p {
   color: #353535; }
 
 .navigarDef {
-  position: absolute;
+  z-index: 105;
+  position: relative;
   left: 80px;
-  top: 570px;
-  width: 300px;
+  top: 0px;
+  width: 280px;
   font-style: italic;
   font-size: 1.3em;
   line-height: 1.4em;
@@ -133,3 +140,10 @@ p {
   -moz-border-radius: 5px;
   border-radius: 5px;
   border: solid #122b5e 3px; }
+
+#footer {
+  position: relative;
+  z-index: 200;
+  background: #ffffdd url(i/ocean.png) repeat-x center;
+  height: 140px;
+  text-align: center; }
