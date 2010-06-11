@@ -31,7 +31,7 @@ body
   position: relative
   width: 960px
   margin: 0 auto
-  padding-bottom: 20px
+  padding-bottom: 0px
   text-align: left
   
 .headerLogo
@@ -53,6 +53,8 @@ body
  
 #navBar
   position: absolute
+  text-align: right
+  width: 600px
   right: 20px
   top: 80px
   font-size: 1.2em
@@ -103,7 +105,7 @@ p
       background-color: blue
       
 #pageSpecific
-  position: absolute
+  position: relative
   height: 100%
   width: 960px
 
@@ -137,9 +139,8 @@ p
   width: 520px
   
 #descrip2
-  position: absolute
+  position: relative
   right: $inset
-  top: 570px
   width: 480px
   text-align: right
   
@@ -149,10 +150,11 @@ p
   color: $offblack
   
 .navigarDef
-  position: absolute
+  z-index: 105
+  position: relative
   left: $inset
-  top: 570px
-  width: 300px
+  top: 0px
+  width: 280px
   font-style: italic
   font-size: 1.3em
   line-height: 1.4em
@@ -167,7 +169,6 @@ p
   
 #footer
   position: relative
-  bottom: 0px
   z-index: 200
   background: #FFD url(i/ocean.png) repeat-x center
   height: 140px
