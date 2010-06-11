@@ -6,6 +6,7 @@ $offblack: #353535
 $navfonts: "Georgia", "Minion Pro", "Times New Roman", "Times", "serif"
 $lightblue: #3a60ad
 $darkblue: #122b5e
+$inset: 80px
 
 body
   background: #FFF
@@ -35,11 +36,10 @@ body
   
 .headerLogo
   position: relative
-  margin-left: 80px
+  margin-left: 20px
   margin-top: 20px
   margin-bottom: 0px
-  
-  
+    
   a
     &:link, &:visited
       width: 300px
@@ -53,7 +53,7 @@ body
  
 #navBar
   position: absolute
-  right: 40px
+  right: 20px
   top: 80px
   font-size: 1.2em
   li
@@ -104,8 +104,9 @@ p
       
 #quote_cycle
   position: relative
-  left: 200px
-  margin-top: 40px
+  top: 40px
+  left: 162px
+  text-align: center
   img
     position: absolute
     z-index: 8
@@ -118,20 +119,21 @@ p
       
 #improves
   position: absolute
-  left: 140px
-  top: 330px
+  left: $inset
+  top: 300px
   color: !lightblue
-  font-size: 2.5em
+  font-size: 2.6em
+  line-height: 2.6em
   
 #descrip1
   position: absolute
-  left: 140px
+  left: $inset
   top: 390px
   width: 500px
   
 #descrip2
   position: absolute
-  right: 64px
+  right: $inset
   top: 570px
   width: 480px
   text-align: right
@@ -143,10 +145,12 @@ p
   
 .navigarDef
   position: absolute
-  left: 140px
+  left: $inset
   top: 570px
-  width: 250px
+  width: 300px
   font-style: italic
+  font-size: 1.3em
+  line-height: 1.4em
   text-align: left
   color: #373737
   background-color: white
