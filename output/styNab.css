@@ -147,3 +147,63 @@ p {
   background: #ffffdd url(i/ocean.png) repeat-x center;
   height: 140px;
   text-align: center; }
+
+.formFlank {
+  text-align: right;
+  font-size: 2em;
+  line-height: 1.5em;
+  width: 500px;
+  position: relative;
+  top: 0px;
+  left: 410px; }
+
+.contactForm {
+  position: relative;
+  left: 64px;
+  width: 500px; }
+
+.or {
+  position: relative;
+  float: center;
+  text-align: center;
+  margin: 15px 0px 25px 75px;
+  font-size: 4em; }
+
+.leftContact {
+  top: 0px;
+  left: 0px; }
+
+.rightContact {
+  top: -337px;
+  right: -330px;
+  position: relative; }
+
+legend {
+  font-size: 2em;
+  line-height: 1.5em;
+  text-align: left;
+  width: 600px; }
+
+input {
+  height: 25px;
+  margin: 0px 0px 10px 0px;
+  font-size: 14px;
+  border: 1px solid #b4b4b4;
+  background-color: white; }
+  input:focus {
+    border-color: #3a60ad;
+    background-color: white; }
+
+textarea {
+  width: 300px;
+  height: 150px;
+  border: 1px solid #b4b4b4;
+  margin: 0px 0px 10px 0px; }
+  textarea:focus {
+    border-color: #3a60ad; }
+
+input.button {
+  width: 85px;
+  height: 25px;
+  top: -203px;
+  position: relative; }
