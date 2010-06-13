@@ -181,6 +181,7 @@ p
     font-size: 1.0em
     color: #FFF
     margin: 25px
+    position:relative
     li
       display: inline
     
@@ -189,13 +190,14 @@ p
         text-decoration: none
         padding: 8px 8px 8px 8px
         margin: -4px -3px -2px -3px
-        
+        &:hover
+          border-bottom: 2px solid #FFF
         &:link, &:visited
           color: #FFF
-          
-        &:hover, &:focus
-          text-decoration:underline
   
+  .footerCo
+    color: #FFF
+
 .formFlank
   text-align: right
   font-size: 2.0em

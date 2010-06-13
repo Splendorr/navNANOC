@@ -160,8 +160,12 @@ p {
       text-decoration: none;
       padding: 8px 8px 8px 8px;
       margin: -4px -3px -2px -3px; }
+      #footer .footerNav .footerNavButton a:hover {
+        border-bottom: 2px solid white; }
       #footer .footerNav .footerNavButton a:link, #footer .footerNav .footerNavButton a:visited {
         color: white; }
+  #footer .footerCo {
+    color: white; }
 
 .formFlank {
   text-align: right;
