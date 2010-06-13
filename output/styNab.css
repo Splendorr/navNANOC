@@ -87,6 +87,7 @@ p {
   position: relative;
   top: 0px;
   left: 0px;
+  margin: 35px 0px 0px 0px;
   text-align: center; }
   #quote_cycle img {
     position: absolute;
@@ -144,9 +145,23 @@ p {
 #footer {
   position: relative;
   z-index: 200;
+  display: block;
+  border: 2px;
   background: #ffffdd url(i/ocean.png) repeat-x center;
   height: 140px;
   text-align: center; }
+  #footer .footerNav {
+    font-size: 1em;
+    color: white;
+    margin: 25px; }
+    #footer .footerNav li {
+      display: inline; }
+    #footer .footerNav .footerNavButton a {
+      text-decoration: none;
+      padding: 8px 8px 8px 8px;
+      margin: -4px -3px -2px -3px; }
+      #footer .footerNav .footerNavButton a:link, #footer .footerNav .footerNavButton a:visited {
+        color: white; }
 
 .formFlank {
   text-align: right;
@@ -160,7 +175,10 @@ p {
 .contactForm {
   position: relative;
   left: 64px;
-  width: 500px; }
+  width: 500px;
+  display: block;
+  padding-bottom: -100px;
+  margin-bottom: -100px; }
 
 .or {
   position: relative;
