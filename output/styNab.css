@@ -212,7 +212,7 @@ input {
   font-size: 14px;
   border: 1px solid #b4b4b4;
   background-color: white; }
-  input:focus {
+  input:focus, input.sffocus {
     border-color: #3a60ad;
     background-color: white; }
 
@@ -221,7 +221,7 @@ textarea {
   height: 150px;
   border: 1px solid #b4b4b4;
   margin: 0px 0px 10px 0px; }
-  textarea:focus {
+  textarea:focus, textarea.sffocus {
     border-color: #3a60ad; }
 
 input.button {
