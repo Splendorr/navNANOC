@@ -1,0 +1,50 @@
+%html
+  %head
+    %title= @item[:title] + " :: Navigar Consulting :: " + @item[:title]
+    
+    %link{:href => "/s/screen.css", :type => "text/css", :rel => "stylesheet", :media => "screen"}
+    
+    %script{:type => "text/javascript", :src => "http://code.jquery.com/jquery-1.4.2.min.js"}
+    %script{:type => "text/javascript", :src => "/j/jq.js"}
+    %script{:type => "text/javascript", :src => "/j/jq_cycle.js"}
+    %script{:type => "text/javascript", :src => "http://gettopup.com/releases/latest/top_up-min.js"}
+
+  %body
+    #page
+      #header
+        %a{:href => "/index.html", :role => "banner"}
+          %img.headerLogo{:src => "/i/logo.png", :alt => "Navigar Consulting, LLC"}
+        .navBar
+          %ul
+            %li.navButton
+              =link_to('Who We Are', '/who/') + " | "
+            %li.navButton
+              =link_to('What We Do', '/what/') + " | "
+            %li.navButton
+              =link_to('Resources', '/resources/') + " | "
+            %li.navButton
+              =link_to('Partners', '/partners/') + " | "
+            %li.contactButton
+              =link_to('Contact', '/contact/')
+      #pageSpecific
+        =yield
+      #footer
+        &nbsp
+        .footerNav
+          %ul
+            %li.footerNavButton
+              =link_to('home', '/index.html') + " | "
+            %li.footerNavButton
+              =link_to('who we are', '/who/') + " | "
+            %li.footerNavButton
+              =link_to('what we do', '/what/') + " | "
+            %li.footerNavButton
+              =link_to('resources', '/resources/') + " | "
+            %li.footerNavButton
+              =link_to('partners', '/partner/') + " | "
+            %li.footerNavButton
+              =link_to('contact', '/contact/')
+        .footerCo
+          Navigar Consulting LLC
+          %br/
+          Marietta, Georgia
