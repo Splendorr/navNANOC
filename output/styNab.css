@@ -107,6 +107,16 @@ p {
   font-size: 2.6em;
   line-height: 2.6em; }
 
+#whoStart {
+  color: #3a60ad;
+  font-size: 2.6em;
+  line-height: 2.6em; }
+
+.bullets {
+  margin-bottom: 18px;
+  margin-left: 30px;
+  list-style-type: circle; }
+
 #descrip1 {
   position: relative;
   left: 80px;
@@ -229,3 +239,12 @@ input.button {
   height: 25px;
   top: -203px;
   position: relative; }
+
+#images a {
+  padding: 154px 15px 15px 15px; }
+  #images a:hover {
+    background-color: #3a60ad; }
+
+.biosBox {
+  background-color: #d4d4d4;
+  text-align: center; }
