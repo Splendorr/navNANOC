@@ -24,14 +24,17 @@
 
 // Color Variables -----------------------------------------------------
 
+$white      : #FFF
 $offblack   : #353535
 $lightblue  : #3a60ad
 $darkblue   : #122b5e
 $radius     : 6
 
-#page *
+//#page *
   background-color: rgba(0, 0, 0, 0.125)
-  
+
+// Header/Footer ---------------------------------------------
+
 .logo
   +columns(4)
   +alpha
@@ -39,12 +42,25 @@ nav
   +columns(7)
   +prefix(1)
   +omega
-  +adjust-font-size-to(20px)
+  +adjust-font-size-to(18px)
   +leader(2, 24px)
-  +trailer(3, 24px)
+  +trailer(4, 24px)
   text-align: right
   ul
-    +horizontal-list
+    +inline-list
+  a
+    +link-boxed( $darkblue, $white )
+    
+#footer
+  +leader(2, 24px)
+  text-align: center
+  background: $darkblue
+  ul
+    +inline-list
+  a
+    +link-boxed ( $white, $darkblue )
+
+// Index.haml-specific code ----------------------------
     
 #quote_cycle
   +full
@@ -82,9 +98,6 @@ nav
   +columns(5, 12)
   +suffix(1, 12)
   +omega(12)
-  
-#footer
-  +full
   
   
 section
