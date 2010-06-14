@@ -22,24 +22,71 @@
 
 // Styles --------------------------------------------------------------
 
-//#page *
+// Color Variables -----------------------------------------------------
+
+$offblack   : #353535
+$lightblue  : #3a60ad
+$darkblue   : #122b5e
+$radius     : 6
+
+#page *
   background-color: rgba(0, 0, 0, 0.125)
   
-#header
+.logo
+  +columns(4)
+  +alpha
+nav
+  +columns(7)
+  +prefix(1)
+  +omega
+  +adjust-font-size-to(20px)
+  +leader(2, 24px)
+  +trailer(3, 24px)
+  text-align: right
+  ul
+    +horizontal-list
+    
+#quote_cycle
   +full
-  +pad(3, 3)
+  margin-left: 11em
+    
+#improves
+  +full
+  +prefix(1)
+  +adjust-font-size-to(40px)
+  +leader(1, 40px)
+  color: $darkblue
+  
+.descriptext
+  color: $offblack
+  +adjust-font-size-to(20px)
+  
+#descrip1
+  +columns(5)
+  +prefix(1)
+  +suffix(6)
+  
+#row
+  +columns(12)
+  +omega
+  +leader(1, 1em)
+  
+#navigarDef
+  +columns(4, 12)
+  padding: 10px
+  margin-left: 5em
+  +border-radius($radius)
+  border: solid #122b5e 3px
 
-  a[role="banner"]
-    +columns(4)
-    //+alpha
-
-  .navBar
-    +columns(3)
-    //+omega
-    text-align: right
-    ul
-      +horizontal-list
-
+#descrip2
+  +columns(5, 12)
+  +suffix(1, 12)
+  +omega(12)
+  
+#footer
+  +full
+  
+  
 section
   +columns(9)
   +omega

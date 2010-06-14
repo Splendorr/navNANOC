@@ -11,23 +11,22 @@
 
   %body
     #page
-      #header
+      .logo
         %a{:href => "/index.html", :role => "banner"}
           %img.headerLogo{:src => "/i/logo.png", :alt => "Navigar Consulting, LLC"}
-        .navBar
-          %ul
-            %li.navButton
-              =link_to('Who We Are', '/who/') + " | "
-            %li.navButton
-              =link_to('What We Do', '/what/') + " | "
-            %li.navButton
-              =link_to('Resources', '/resources/') + " | "
-            %li.navButton
-              =link_to('Partners', '/partners/') + " | "
-            %li.contactButton
-              =link_to('Contact', '/contact/')
-      #pageSpecific
-        =yield
+      %nav
+        %ul
+          %li.navButton
+            =link_to('Who We Are', '/who/') + " | "
+          %li.navButton
+            =link_to('What We Do', '/what/') + " | "
+          %li.navButton
+            =link_to('Resources', '/resources/') + " | "
+          %li.navButton
+            =link_to('Partners', '/partners/') + " | "
+          %li.contactButton
+            =link_to('Contact', '/contact/')
+      =yield
       #footer
         &nbsp
         .footerNav
