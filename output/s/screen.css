@@ -374,25 +374,42 @@ body {
   display: block;
 }
 
-/* line 38, content/s/screen.sass */
-.logo {
-  display: inline;
-  float: left;
-  width: 31.148%;
-  margin-right: 1.639%;
-  margin-left: 1.639%;
+/* line 33, content/s/screen.sass */
+#page * {
+  background-color: rgba(0, 0, 0, 0.125);
 }
 
-/* line 41, content/s/screen.sass */
-nav {
+/* line 38, content/s/screen.sass */
+#header {
   display: inline;
   float: left;
-  width: 55.738%;
+  width: 96.721%;
   margin-right: 1.639%;
-  padding-left: 8.197%;
   display: inline;
   float: right;
   margin-right: 1.639%;
+  /* ugly hacks for IE6-7 */
+  #margin-left: -1em;
+}
+
+/* line 42, content/s/screen.sass */
+#logo {
+  display: inline;
+  float: left;
+  width: 32.203%;
+  margin-right: 1.695%;
+}
+
+/* line 44, content/s/screen.sass */
+#nav {
+  display: inline;
+  float: left;
+  width: 57.627%;
+  margin-right: 1.695%;
+  padding-left: 8.475%;
+  display: inline;
+  float: right;
+  margin-right: 0;
   /* ugly hacks for IE6-7 */
   #margin-left: -1em;
   font-size: 1.125em;
@@ -401,41 +418,29 @@ nav {
   margin-bottom: 4em;
   text-align: right;
 }
-/* line 49, content/s/screen.sass */
-nav ul {
+/* line 52, content/s/screen.sass */
+#nav ul {
   list-style-type: none;
   margin: 0px;
   padding: 0px;
   display: inline;
 }
 /* line 8, /usr/local/lib/ruby/gems/1.9.1/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/utilities/lists/_inline-list.scss */
-nav ul li {
+#nav ul li {
   margin: 0px;
   padding: 0px;
   display: inline;
 }
-/* line 51, content/s/screen.sass */
-nav a {
-  text-decoration: none;
-  padding: 0.4em 0.5em;
-}
-/* line 47, content/s/./_base.sass */
-nav a:link, nav a:visited {
-  color: #122b5e;
-}
-/* line 50, content/s/./_base.sass */
-nav a:hover, nav a:focus {
-  color: white;
-  background-color: #122b5e;
-}
 
-/* line 54, content/s/screen.sass */
+/* line 57, content/s/screen.sass */
 #footer {
   margin-top: 2em;
   text-align: center;
+  color: white;
   background: #122b5e;
+  padding-bottom: 10px;
 }
-/* line 58, content/s/screen.sass */
+/* line 63, content/s/screen.sass */
 #footer ul {
   list-style-type: none;
   margin: 0px;
@@ -448,7 +453,7 @@ nav a:hover, nav a:focus {
   padding: 0px;
   display: inline;
 }
-/* line 60, content/s/screen.sass */
+/* line 65, content/s/screen.sass */
 #footer a {
   text-decoration: none;
   padding: 0.4em 0.5em;
@@ -463,15 +468,27 @@ nav a:hover, nav a:focus {
   background-color: white;
 }
 
-/* line 65, content/s/screen.sass */
-#quote_cycle {
+/* line 68, content/s/screen.sass */
+.footerNav {
+  margin-bottom: 0.706em;
+}
+
+/* line 73, content/s/screen.sass */
+#quote_container {
   clear: both;
   margin-right: 1.639%;
   margin-left: 1.639%;
-  margin-left: 11em;
+  padding-left: 16.393%;
+  padding-right: 16.393%;
 }
 
-/* line 69, content/s/screen.sass */
+/* line 77, content/s/screen.sass */
+#quote_cycle {
+  height: 100px;
+  width: 635px;
+}
+
+/* line 83, content/s/screen.sass */
 #improves {
   clear: both;
   margin-right: 1.639%;
@@ -483,14 +500,14 @@ nav a:hover, nav a:focus {
   color: #122b5e;
 }
 
-/* line 76, content/s/screen.sass */
+/* line 90, content/s/screen.sass */
 .descriptext {
   color: #353535;
   font-size: 1.25em;
   line-height: 1.2em;
 }
 
-/* line 80, content/s/screen.sass */
+/* line 94, content/s/screen.sass */
 #descrip1 {
   display: inline;
   float: left;
@@ -500,7 +517,7 @@ nav a:hover, nav a:focus {
   padding-right: 49.18%;
 }
 
-/* line 85, content/s/screen.sass */
+/* line 99, content/s/screen.sass */
 #row {
   display: inline;
   float: left;
@@ -514,7 +531,7 @@ nav a:hover, nav a:focus {
   margin-top: 24px;
 }
 
-/* line 90, content/s/screen.sass */
+/* line 104, content/s/screen.sass */
 #navigarDef {
   display: inline;
   float: left;
@@ -531,7 +548,7 @@ nav a:hover, nav a:focus {
   border: solid #122b5e 3px;
 }
 
-/* line 97, content/s/screen.sass */
+/* line 111, content/s/screen.sass */
 #descrip2 {
   display: inline;
   float: left;
@@ -545,7 +562,7 @@ nav a:hover, nav a:focus {
   #margin-left: -1em;
 }
 
-/* line 103, content/s/screen.sass */
+/* line 117, content/s/screen.sass */
 section {
   display: inline;
   float: left;
@@ -557,14 +574,14 @@ section {
   /* ugly hacks for IE6-7 */
   #margin-left: -1em;
 }
-/* line 106, content/s/screen.sass */
+/* line 120, content/s/screen.sass */
 section article {
   display: inline;
   float: left;
   width: 65.909%;
   margin-right: 2.273%;
 }
-/* line 108, content/s/screen.sass */
+/* line 122, content/s/screen.sass */
 section aside {
   display: inline;
   float: left;
@@ -577,7 +594,7 @@ section aside {
   #margin-left: -1em;
 }
 
-/* line 112, content/s/screen.sass */
+/* line 126, content/s/screen.sass */
 footer {
   clear: both;
   margin-right: 1.639%;

@@ -30,18 +30,21 @@ $lightblue  : #3a60ad
 $darkblue   : #122b5e
 $radius     : 6
 
-//#page *
+#page *
   background-color: rgba(0, 0, 0, 0.125)
 
 // Header/Footer ---------------------------------------------
 
-.logo
-  +columns(4)
-  +alpha
-nav
-  +columns(7)
-  +prefix(1)
+#header
+  +columns(12)
   +omega
+
+#logo
+  +columns(4,12)
+#nav
+  +columns(7,12)
+  +prefix(1,12)
+  +omega(12)
   +adjust-font-size-to(18px)
   +leader(2, 24px)
   +trailer(4, 24px)
@@ -49,22 +52,33 @@ nav
   ul
     +inline-list
   a
-    +link-boxed( $darkblue, $white )
+    //+link-boxed( $darkblue, $white )
     
 #footer
   +leader(2, 24px)
   text-align: center
+  color: $white
   background: $darkblue
+  padding-bottom: 10px
   ul
     +inline-list
   a
     +link-boxed ( $white, $darkblue )
+    
+.footerNav
+  +trailer(1, 34px)
 
 // Index.haml-specific code ----------------------------
-    
-#quote_cycle
+
+#quote_container
   +full
-  margin-left: 11em
+  +pad(2, 2)
+
+#quote_cycle
+  //+full
+  //margin-left: 11em
+  height: 100px
+  width: 635px
     
 #improves
   +full

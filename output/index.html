@@ -9,34 +9,38 @@
   </head>
   <body>
     <div id='page'>
-      <div class='logo'>
-        <a href='index.html' role='banner'>
-          <img alt='Navigar Consulting, LLC' class='headerLogo' src='i/logo.png'>
-        </a>
+      <div id='header'>
+        <div id='logo'>
+          <a href='index.html' role='banner'>
+            <img alt='Navigar Consulting, LLC' class='headerLogo' src='i/logo.png'>
+          </a>
+        </div>
+        <div id='nav'>
+          <ul>
+            <li class='navButton'>
+              <a href="who/">Who We Are</a>|
+            </li>
+            <li class='navButton'>
+              <a href="what/">What We Do</a>|
+            </li>
+            <li class='navButton'>
+              <a href="resources/">Resources</a>|
+            </li>
+            <li class='navButton'>
+              <a href="partners/">Partners</a>|
+            </li>
+            <li class='contactButton'>
+              <a href="contact/">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <nav>
-        <ul>
-          <li class='navButton'>
-            <a href="who/">Who We Are</a>|
-          </li>
-          <li class='navButton'>
-            <a href="what/">What We Do</a>|
-          </li>
-          <li class='navButton'>
-            <a href="resources/">Resources</a>|
-          </li>
-          <li class='navButton'>
-            <a href="partners/">Partners</a>|
-          </li>
-          <li class='contactButton'>
-            <a href="contact/">Contact</a>
-          </li>
-        </ul>
-      </nav>
-      <div id='quote_cycle'>
-        <img src='i/quote1.jpg' />
-        <img src='i/quote2.jpg' />
-        <img src='i/quote3.jpg' />
+      <div id='quote_container'>
+        <div id='quote_cycle'>
+          <img src='i/quote1.jpg' />
+          <img src='i/quote2.jpg' />
+          <img src='i/quote3.jpg' />
+        </div>
       </div>
       <div id='improves'>Navigar Consulting improves business processes.</div>
       <div id='row'>
@@ -82,7 +86,7 @@
         </ul>
       </div>
       <div class='footerCo'>
-        Navigar Consulting LLC
+        Navigar Consulting, LLC
         <br>
         Marietta, Georgia
       </div>
