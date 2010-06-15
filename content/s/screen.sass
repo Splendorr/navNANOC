@@ -13,7 +13,7 @@
 // change '#page' to match your HTML container element(s)
 #page
   +container
-  //+show-grid("grid.png")
+  +show-grid("grid.png")
 
 // show-grid loads a 64+16x24 grid image by default
 // For other grid settings, run `compass grid-img 30+10x20`
@@ -81,16 +81,14 @@ body
   
 // General Purpose -------------------------------------
 
-#text
-  +full
-  +prefix(3)
-  +suffix(3)
-  +leader(2, 24px)
+#fullwidth
+  +columns(12)
+  +omega
 
-#textBio
-  //+full
-  +prefix(3)
-  +suffix(2)
+#text
+  +columns(7,12)
+  +prefix(3,12)
+  +suffix(2,12)
   +leader(2, 24px)
 
 #tittleText
@@ -99,9 +97,11 @@ body
   padding-left: 12px
   border-left: solid 12px $lightblue
   
-#whoStart
+#mainText
+  +columns(6,7)
   +leader(1)
   text-align: justify
+
   
 .bullets
   +leader(1)
@@ -112,33 +112,7 @@ body
   li
     margin-bottom: 8px
     
-#bios
-  diplay:inline
-  img
-    border: solid 6px $lightblue
-    margin: 6px
-    
-    &:hover, &:focus
-      border: solid 6px $darkblue
-    
 
-  a
-    //text-decoration: none
-    padding: 6px
-    //margin: -4px -3px -2px -3px
-    
-    //border: solid 6px $lightblue
-    //padding-top: 100px
-    
-    //&:link, &:visited
-      border: solid 6px $lightblue
-      
-
-    //&:hover, &:focus
-      border: solid 6px $darkblue
-      
-    p
-      //text-align:center
 
 // Index.haml-specific code ----------------------------
 
@@ -192,21 +166,54 @@ body
   
 // Who-specific ------------------------------------------------------
 
+#textBio
+  +columns(7,12)
+  +prefix(3,12)
+  +suffix(2,12)
+  +leader(1, 24px)
 
-  
-  
-section
-  +columns(9)
-  +omega
-  article
-    +columns(6, 9)
-  aside
-    +columns(3, 9)
-    +omega(9)
+#biosbox
+  //nothing
 
-footer
-  +full
-  +pad(3, 3)
+#biog
+  //diplay:inline
+  
+  +columns(3,7)
+  text-align: center
+  +trailer(1, 24px)
+  
+  img
+    border: solid 6px $lightblue
+    border-bottom: solid 30px $lightblue
+    //margin: 6px
+    
+    &:hover, &:focus
+      border: solid 6px $darkblue
+      border-bottom: solid 30px $darkblue
+      
+  a
+    text-decoration: none
+    //padding: 6px
+    //margin: -4px -3px -2px -3px
+    
+    //border: solid 6px $lightblue
+    //padding-top: 100px
+    
+    //&:link, &:visited
+      border: solid 6px $lightblue
+      
+
+    //&:hover, &:focus
+      border: solid 6px $darkblue
+      
+  .bioname
+    position: relative
+    //margin-left: 10px
+    margin-top: -1.7em
+    //text-align: center
+    //margin-left: 1em
+    //background-color: $darkblue
+    color: $white
   
 // Contact.html-specific code ----------------------------
 
