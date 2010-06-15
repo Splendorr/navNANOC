@@ -87,6 +87,12 @@ body
   +suffix(3)
   +leader(2, 24px)
 
+#textBio
+  //+full
+  +prefix(3)
+  +suffix(2)
+  +leader(2, 24px)
+
 #tittleText
   color: $darkblue
   +adjust-font-size-to(60px)
@@ -107,6 +113,7 @@ body
     margin-bottom: 8px
     
 #bios
+  diplay:inline
   img
     border: solid 6px $lightblue
     margin: 6px
@@ -117,7 +124,7 @@ body
 
   a
     //text-decoration: none
-    //padding: 6px
+    padding: 6px
     //margin: -4px -3px -2px -3px
     
     //border: solid 6px $lightblue
@@ -129,6 +136,9 @@ body
 
     //&:hover, &:focus
       border: solid 6px $darkblue
+      
+    p
+      //text-align:center
 
 // Index.haml-specific code ----------------------------
 
@@ -238,11 +248,11 @@ footer
       background-color: #FFF
     
   textarea
-    //width: 300px
+    width: 250px
     height: 150px
     border: 1px solid #B4B4B4
     margin: 0px 0px 10px 0px
-    &:focus, &.sffocus
+    &:focus
       border-color: #3a60ad
     
   input.button
@@ -258,3 +268,36 @@ footer
 #rightContact
   +columns(4,8)
   +omega(8)
+  
+//Partners Page Specific  ------------------------
+#partner
+  margin: 0px
+  height: 300px
+
+.partnerLogo
+  width: 300px
+  margin-right: 12px
+  margin-bottom: 12px
+  
+//Resources Page Specific ------------------------
+.fileDownload
+  text-align: left
+  margin: 10px
+
+  img
+
+    border: solid 6px $lightblue
+    margin: 6px
+    
+    &:hover, &:focus
+      border: solid 6px $darkblue
+#fileTextHead
+  +adjust-font-size-to(24px)
+  margin: 5px
+  //+border-radius($radius)
+  //border: solid 2px $offblack
+  border-bottom: solid 1px $offblack
+
+#fileText
+  +adjust-font-size-to(10px)
+  line-height: 16px
