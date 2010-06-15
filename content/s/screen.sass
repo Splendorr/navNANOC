@@ -68,7 +68,7 @@ body
   text-align: center
   color: $white
   background: $darkblue
-  padding-bottom: 10px
+  padding-bottom: 20px
   ul
     +inline-list
   a
@@ -79,12 +79,54 @@ body
   
 // General Purpose -------------------------------------
 
-#tittle
+#text
   +full
+  +prefix(3)
+  +suffix(3)
+  +leader(2, 24px)
+
+#tittleText
   color: $darkblue
-  +adjust-font-size-to(120px)
-  +columns(6, 12)
-  +trailer(1)
+  +adjust-font-size-to(60px)
+  padding-left: 12px
+  border-left: solid 12px $lightblue
+  
+#whoStart
+  +leader(1)
+  text-align: justify
+  
+.bullets
+  +leader(1)
+  margin-left: 1em
+  color: $lightblue
+  +adjust-font-size-to(24px)
+  
+  li
+    margin-bottom: 8px
+    
+#bios
+  img
+    border: solid 6px $lightblue
+    margin: 6px
+    
+    &:hover, &:focus
+      border: solid 6px $darkblue
+    
+
+  a
+    //text-decoration: none
+    //padding: 6px
+    //margin: -4px -3px -2px -3px
+    
+    //border: solid 6px $lightblue
+    //padding-top: 100px
+    
+    //&:link, &:visited
+      border: solid 6px $lightblue
+      
+
+    //&:hover, &:focus
+      border: solid 6px $darkblue
 
 // Index.haml-specific code ----------------------------
 
