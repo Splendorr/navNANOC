@@ -365,21 +365,19 @@ body {
   margin-right: auto;
   width: 61em;
   max-width: 100%;
-  background-image: url('/i/grid.png');
-  background-repeat: repeat;
-  background-position: 1em 0;
 }
 /* line 8, /usr/local/lib/ruby/gems/1.9.1/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/utilities/general/./_hacks.scss */
 #page {
   display: block;
 }
 
-/* line 33, content/s/screen.sass */
-#page * {
-  background-color: rgba(0, 0, 0, 0.125);
+/* line 38, content/s/screen.sass */
+body {
+  background-color: white;
+  border-top: solid 4px #3a60ad;
 }
 
-/* line 38, content/s/screen.sass */
+/* line 47, content/s/screen.sass */
 #header {
   display: inline;
   float: left;
@@ -392,7 +390,7 @@ body {
   #margin-left: -1em;
 }
 
-/* line 42, content/s/screen.sass */
+/* line 51, content/s/screen.sass */
 #logo {
   display: inline;
   float: left;
@@ -400,7 +398,7 @@ body {
   margin-right: 1.695%;
 }
 
-/* line 44, content/s/screen.sass */
+/* line 53, content/s/screen.sass */
 #nav {
   display: inline;
   float: left;
@@ -417,7 +415,7 @@ body {
   margin-bottom: 4em;
   text-align: right;
 }
-/* line 52, content/s/screen.sass */
+/* line 61, content/s/screen.sass */
 #nav ul {
   list-style-type: none;
   margin: 0px;
@@ -430,7 +428,7 @@ body {
   padding: 0px;
   display: inline;
 }
-/* line 54, content/s/screen.sass */
+/* line 63, content/s/screen.sass */
 #nav a {
   text-decoration: none;
   padding: 0.4em 0.5em;
@@ -445,7 +443,7 @@ body {
   background-color: #122b5e;
 }
 
-/* line 57, content/s/screen.sass */
+/* line 66, content/s/screen.sass */
 #footer {
   margin-top: 2em;
   text-align: center;
@@ -453,7 +451,7 @@ body {
   background: #122b5e;
   padding-bottom: 10px;
 }
-/* line 63, content/s/screen.sass */
+/* line 72, content/s/screen.sass */
 #footer ul {
   list-style-type: none;
   margin: 0px;
@@ -466,7 +464,7 @@ body {
   padding: 0px;
   display: inline;
 }
-/* line 65, content/s/screen.sass */
+/* line 74, content/s/screen.sass */
 #footer a {
   text-decoration: none;
   padding: 0.4em 0.5em;
@@ -481,12 +479,12 @@ body {
   background-color: white;
 }
 
-/* line 68, content/s/screen.sass */
+/* line 77, content/s/screen.sass */
 .footerNav {
   margin-bottom: 0.706em;
 }
 
-/* line 73, content/s/screen.sass */
+/* line 82, content/s/screen.sass */
 #quote_container {
   clear: both;
   margin-right: 1.639%;
@@ -495,13 +493,13 @@ body {
   padding-right: 16.393%;
 }
 
-/* line 77, content/s/screen.sass */
+/* line 86, content/s/screen.sass */
 #quote_cycle {
   height: 100px;
   width: 635px;
 }
 
-/* line 83, content/s/screen.sass */
+/* line 92, content/s/screen.sass */
 #improves {
   clear: both;
   margin-right: 1.639%;
@@ -513,14 +511,14 @@ body {
   color: #122b5e;
 }
 
-/* line 90, content/s/screen.sass */
+/* line 99, content/s/screen.sass */
 .descriptext {
   color: #353535;
   font-size: 1.25em;
   line-height: 1.2em;
 }
 
-/* line 94, content/s/screen.sass */
+/* line 103, content/s/screen.sass */
 #row {
   display: inline;
   float: left;
@@ -534,7 +532,7 @@ body {
   margin-top: 24px;
 }
 
-/* line 99, content/s/screen.sass */
+/* line 108, content/s/screen.sass */
 #descrip1 {
   clear: both;
   margin-right: 1.639%;
@@ -544,7 +542,7 @@ body {
   margin-top: 24px;
 }
 
-/* line 106, content/s/screen.sass */
+/* line 115, content/s/screen.sass */
 #navigarDef {
   display: inline;
   float: left;
@@ -561,7 +559,7 @@ body {
   border: solid #122b5e 3px;
 }
 
-/* line 113, content/s/screen.sass */
+/* line 122, content/s/screen.sass */
 #descrip2 {
   display: inline;
   float: left;
@@ -575,7 +573,7 @@ body {
   #margin-left: -1em;
 }
 
-/* line 119, content/s/screen.sass */
+/* line 128, content/s/screen.sass */
 section {
   display: inline;
   float: left;
@@ -587,14 +585,14 @@ section {
   /* ugly hacks for IE6-7 */
   #margin-left: -1em;
 }
-/* line 122, content/s/screen.sass */
+/* line 131, content/s/screen.sass */
 section article {
   display: inline;
   float: left;
   width: 65.909%;
   margin-right: 2.273%;
 }
-/* line 124, content/s/screen.sass */
+/* line 133, content/s/screen.sass */
 section aside {
   display: inline;
   float: left;
@@ -607,7 +605,7 @@ section aside {
   #margin-left: -1em;
 }
 
-/* line 128, content/s/screen.sass */
+/* line 137, content/s/screen.sass */
 footer {
   clear: both;
   margin-right: 1.639%;
