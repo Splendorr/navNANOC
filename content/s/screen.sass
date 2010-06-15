@@ -28,7 +28,7 @@ $white      : #FFF
 $offblack   : #353535
 $lightblue  : #3a60ad
 $darkblue   : #122b5e
-$radius     : 6
+$radius     : 6px
 
 //#page *
   background-color: rgba(0, 0, 0, 0.125)
@@ -37,6 +37,8 @@ $radius     : 6
 
 body
   background-color: $white
+
+#border
   border-top: solid 4px $lightblue
 
 #page
@@ -106,18 +108,21 @@ body
   +leader(1, 1em)
   
 #descrip1
-  +full
-  //+columns(5, 12)
+  +columns(6, 12)
   +prefix(1, 12)
-  +suffix(6, 12)
-  +leader(1, 1em)
-  
-#navigarDef
+  //+leader(1, 1em)
+  //+suffix(1, 12)
+
+#navigarDefBox
   +columns(4, 12)
+  +suffix(1, 12)
+  +omega(12)
+
+#navigarDef
   padding: 10px
-  margin-left: 5em
+  //margin-left: 5em
   +border-radius($radius)
-  border: solid #122b5e 3px
+  border: solid 3px $lightblue
 
 #descrip2
   +columns(5, 12)

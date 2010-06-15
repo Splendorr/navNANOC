@@ -1,8 +1,12 @@
+!!! 5
 %html
   %head
     %title= @item[:title] + " :: Navigar Consulting :: " + @item[:title]
     
     %link{:href => "/s/screen.css", :type => "text/css", :rel => "stylesheet", :media => "screen"}
+    <!--[if IE]>
+    <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <![endif]-->
     
     %script{:type => "text/javascript", :src => "http://code.jquery.com/jquery-1.4.2.min.js"}
     %script{:type => "text/javascript", :src => "/j/jq.js"}
@@ -10,6 +14,7 @@
     %script{:type => "text/javascript", :src => "http://gettopup.com/releases/latest/top_up-min.js"}
 
   %body
+    #border
     #page
       #header
         #logo
