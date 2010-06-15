@@ -42,8 +42,8 @@ $radius     : 6
 #logo
   +columns(4,12)
 #nav
-  +columns(7,12)
-  +prefix(1,12)
+  +columns(8,12)
+  //+prefix(1,12)
   +omega(12)
   +adjust-font-size-to(18px)
   +leader(2, 24px)
@@ -52,7 +52,7 @@ $radius     : 6
   ul
     +inline-list
   a
-    //+link-boxed( $darkblue, $white )
+    +link-boxed( $darkblue, $white )
     
 #footer
   +leader(2, 24px)
@@ -91,14 +91,16 @@ $radius     : 6
   color: $offblack
   +adjust-font-size-to(20px)
   
-#descrip1
-  +columns(5)
-  +prefix(1)
-  +suffix(6)
-  
 #row
   +columns(12)
   +omega
+  +leader(1, 1em)
+  
+#descrip1
+  +full
+  //+columns(5, 12)
+  +prefix(1, 12)
+  +suffix(6, 12)
   +leader(1, 1em)
   
 #navigarDef

@@ -404,9 +404,8 @@ body {
 #nav {
   display: inline;
   float: left;
-  width: 57.627%;
+  width: 66.102%;
   margin-right: 1.695%;
-  padding-left: 8.475%;
   display: inline;
   float: right;
   margin-right: 0;
@@ -430,6 +429,20 @@ body {
   margin: 0px;
   padding: 0px;
   display: inline;
+}
+/* line 54, content/s/screen.sass */
+#nav a {
+  text-decoration: none;
+  padding: 0.4em 0.5em;
+}
+/* line 48, content/s/./_base.sass */
+#nav a:link, #nav a:visited {
+  color: #122b5e;
+}
+/* line 51, content/s/./_base.sass */
+#nav a:hover, #nav a:focus {
+  color: white;
+  background-color: #122b5e;
 }
 
 /* line 57, content/s/screen.sass */
@@ -458,11 +471,11 @@ body {
   text-decoration: none;
   padding: 0.4em 0.5em;
 }
-/* line 47, content/s/./_base.sass */
+/* line 48, content/s/./_base.sass */
 #footer a:link, #footer a:visited {
   color: white;
 }
-/* line 50, content/s/./_base.sass */
+/* line 51, content/s/./_base.sass */
 #footer a:hover, #footer a:focus {
   color: #122b5e;
   background-color: white;
@@ -508,16 +521,6 @@ body {
 }
 
 /* line 94, content/s/screen.sass */
-#descrip1 {
-  display: inline;
-  float: left;
-  width: 39.344%;
-  margin-right: 1.639%;
-  padding-left: 8.197%;
-  padding-right: 49.18%;
-}
-
-/* line 99, content/s/screen.sass */
 #row {
   display: inline;
   float: left;
@@ -531,7 +534,17 @@ body {
   margin-top: 24px;
 }
 
-/* line 104, content/s/screen.sass */
+/* line 99, content/s/screen.sass */
+#descrip1 {
+  clear: both;
+  margin-right: 1.639%;
+  margin-left: 1.639%;
+  padding-left: 8.475%;
+  padding-right: 50.847%;
+  margin-top: 24px;
+}
+
+/* line 106, content/s/screen.sass */
 #navigarDef {
   display: inline;
   float: left;
@@ -548,7 +561,7 @@ body {
   border: solid #122b5e 3px;
 }
 
-/* line 111, content/s/screen.sass */
+/* line 113, content/s/screen.sass */
 #descrip2 {
   display: inline;
   float: left;
@@ -562,7 +575,7 @@ body {
   #margin-left: -1em;
 }
 
-/* line 117, content/s/screen.sass */
+/* line 119, content/s/screen.sass */
 section {
   display: inline;
   float: left;
@@ -574,14 +587,14 @@ section {
   /* ugly hacks for IE6-7 */
   #margin-left: -1em;
 }
-/* line 120, content/s/screen.sass */
+/* line 122, content/s/screen.sass */
 section article {
   display: inline;
   float: left;
   width: 65.909%;
   margin-right: 2.273%;
 }
-/* line 122, content/s/screen.sass */
+/* line 124, content/s/screen.sass */
 section aside {
   display: inline;
   float: left;
@@ -594,7 +607,7 @@ section aside {
   #margin-left: -1em;
 }
 
-/* line 126, content/s/screen.sass */
+/* line 128, content/s/screen.sass */
 footer {
   clear: both;
   margin-right: 1.639%;
