@@ -28,6 +28,7 @@ $white      : #FFF
 $offblack   : #353535
 $lightblue  : #3a60ad
 $darkblue   : #122b5e
+$darkerblue : #07183a
 $radius     : 6px
 
 //#page *
@@ -68,6 +69,7 @@ body
   text-align: center
   color: $white
   background: $darkblue
+  +linear-gradient(color-stops($darkblue, $darkerblue))
   padding-bottom: 20px
   ul
     +inline-list
@@ -198,20 +200,61 @@ footer
   
 // Contact.html-specific code ----------------------------
 
-.formFlank
-  +full
+.formsplanation
+  +adjust-font-size-to(20px)
+
+#formFlank
+  +columns(8)
+  +prefix(2)
+  +suffix(2)
+  +omega
+  +leader(2, 24px)
   color: $offblack
-  +adjust-font-size-to(28px)
-  +columns(7, 12)
-  +suffix(1)
   
 .contactForm
-  +full
+  //+full
   color: $offblack
-  +adjust-font-size-to(28px)
-  +columns(7, 12)
-  +trailer(1)
-  +omega(12)
+  //+adjust-font-size-to(28px)
+  //+columns(7, 12)
+  //+trailer(1)
+  //+omega(12)
 
+  // From nav2
 
+  //legend
+    font-size: 2.0em
+    line-height: 1.5em
+    text-align: left
+    width: 600px
+  
+  input
+    height: 25px
+    margin: 0px 0px 10px 0px
+    font-size: 14px
+    border: 1px solid #B4B4B4
+    background-color: #FFF
+    &:focus, &.sffocus
+      border-color: #3a60ad
+      background-color: #FFF
+    
+  textarea
+    //width: 300px
+    height: 150px
+    border: 1px solid #B4B4B4
+    margin: 0px 0px 10px 0px
+    &:focus, &.sffocus
+      border-color: #3a60ad
+    
+  input.button
+    width: 85px
+    height: 25px
+    //top: -203px
+    position: relative
+    color: $white
+    background-color: $lightblue
 
+#leftContact
+  +columns(4,8)
+#rightContact
+  +columns(4,8)
+  +omega(8)
