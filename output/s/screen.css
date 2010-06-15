@@ -585,7 +585,7 @@ body {
   #margin-left: -1em;
 }
 
-/* line 133, content/s/screen.sass */
+/* line 137, content/s/screen.sass */
 section {
   display: inline;
   float: left;
@@ -597,14 +597,14 @@ section {
   /* ugly hacks for IE6-7 */
   #margin-left: -1em;
 }
-/* line 136, content/s/screen.sass */
+/* line 140, content/s/screen.sass */
 section article {
   display: inline;
   float: left;
   width: 65.909%;
   margin-right: 2.273%;
 }
-/* line 138, content/s/screen.sass */
+/* line 142, content/s/screen.sass */
 section aside {
   display: inline;
   float: left;
@@ -617,7 +617,7 @@ section aside {
   #margin-left: -1em;
 }
 
-/* line 142, content/s/screen.sass */
+/* line 146, content/s/screen.sass */
 footer {
   clear: both;
   margin-right: 1.639%;
