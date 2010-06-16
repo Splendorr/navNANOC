@@ -89,7 +89,7 @@ body
   +columns(7,12)
   +prefix(3,12)
   +suffix(2,12)
-  +leader(2, 24px)
+  +leader(1, 24px)
 
 #tittleText
   color: $darkblue
@@ -277,10 +277,22 @@ body
   +omega(8)
   
 //Partners Page Specific  ------------------------
-#partner
-  margin: 0px
-  height: 300px
 
+#partnerContainer
+  +columns(10,12)
+  +prefix(1,12)
+  +suffix(1,12)
+  +leader(1, 24px)
+  +omega
+
+#partnerLogoContainer
+  +columns(4,10)
+  
+#partnerText
+  +columns(6,10)
+  +omega(10)
+  text-align: justify
+  
 .partnerLogo
   width: 300px
   margin-right: 12px
