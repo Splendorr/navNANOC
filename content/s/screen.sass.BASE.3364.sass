@@ -84,7 +84,6 @@ body
 #fullwidth
   +columns(12)
   +omega
-  +trailer(2, 24px)
 
 #text
   +columns(7,12)
@@ -93,36 +92,16 @@ body
   +leader(1, 24px)
 
 #tittleText
-  +columns(9)
   color: $darkblue
   +adjust-font-size-to(60px)
   padding-left: 12px
   border-left: solid 12px $lightblue
-  margin-left: 15px
-  
-#tittlyLinks
-  +columns(2)
-  +adjust-font-size-to(14px)
-  text-align: right
-  margin-right: -13px
-  margin-left: 15px
-  ul
-    padding-top: 60px
-    list-style-type: none
-    li
-      a
-        text-decoration: none
-  
-#tittleBox
-  +columns(12, 12)
-  +prefix(1, 12)
-  +suffix(0, 12)
-  +leader(1, 24px)
   
 #mainText
   +columns(6,7)
   +leader(1)
   text-align: justify
+
   
 .bullets
   +leader(1)
@@ -236,15 +215,16 @@ body
     //background-color: $darkblue
     color: $white
   
-// Contact-specific code ----------------------------
+// Contact.html-specific code ----------------------------
 
 .formsplanation
   +adjust-font-size-to(20px)
 
 #formFlank
-  +columns(8, 12)
-  +prefix(2, 12)
-  +suffix(2, 12)
+  +columns(8)
+  +prefix(2)
+  +suffix(2)
+  +omega
   +leader(2, 24px)
   color: $offblack
   
@@ -275,8 +255,7 @@ body
       background-color: #FFF
     
   textarea
-    //width: 250px
-    width: 100%
+    width: 250px
     height: 150px
     border: 1px solid #B4B4B4
     margin: 0px 0px 10px 0px
@@ -285,24 +264,17 @@ body
     
   input.button
     width: 85px
-    height: 30px
+    height: 25px
     //top: -203px
     position: relative
     color: $white
     background-color: $lightblue
-
-#sendButton
-  +leader(5, 24px)
-  width: 100%
-  text-align: right
 
 #leftContact
   +columns(4,8)
 #rightContact
   +columns(4,8)
   +omega(8)
-  text-align: justify
-
   
 //Partners Page Specific  ------------------------
 
@@ -324,7 +296,8 @@ body
   +omega(10)
   +trailer(1, 24px)
   text-align: justify
-    
+  
+  
 .partnerLogo
   width: 280px
   margin-right: 12px
@@ -332,27 +305,12 @@ body
   
 //Resources Page Specific ------------------------
 
-#resourceContainer
-  +columns(8,12)
-  +prefix(2,12)
-  +suffix(2,12)
-  +leader(2, 24px)
-  
-#resourceFileContainer
-  +columns(1,8)
-  //+leader(2,24px)
-  
-#resourceDescription
-  +columns(7,8)
-  +omega(8)
-
 #fileTextHead
   +adjust-font-size-to(24px)
-  //+leader(1, 24px)
-  //margin-top: 25px
+  margin-top: 25px
   //+border-radius($radius)
   //border: solid 2px $offblack
-  //border-bottom: solid 1px $offblack
+  border-bottom: solid 1px $offblack
 
 #fileText
   +adjust-font-size-to(10px)
@@ -360,51 +318,11 @@ body
   margin-top: 10px
 
 #filePic
-  //margin: 15px 15px 15px 25px
-  
+  margin: 15px 15px 15px 25px
   img
-    border: solid 8px $lightblue
-    //text-align:right
-    background-color: $lightblue
+
+    border: solid 4px $lightblue
+    text-align:right
     
     &:hover, &:focus
-<<<<<<< HEAD
       border: solid 4px $darkblue
-
-
-//What We Do Specific ---------------------------
-#phaseHeader
-  +adjust-font-size-to(24px)
-  margin-top: 25px
-  margin-bottom: 15px
-  text-align: right
-
-#phaseContainer
-  +columns(9,12)
-  +prefix(1,12)
-  +suffix(2,12)
-  +leader(2, 24px)
-
-#phaseAside
-  +columns(3, 8)
-  margin-top: 25px
-  text-align: right
-  +adjust-font-size-to(32px)
-  
-#phaseText
-  +columns(6,8)
-  +omega(8)
-  +trailer(1, 24px)
-  text-align: justify
-  margin-bottom: 20px
-  padding-left: 20px
-  border-left: solid 1px black
-
-#subText
-  margin-bottom: 15px
-  border: solid 8px $darkblue
-  background-color: $darkblue
-=======
-      border: solid 8px $darkblue
-      background-color: $darkblue
->>>>>>> e845f8e1b837423baadc93c9519ebff7cdb79d42
