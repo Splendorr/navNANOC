@@ -102,16 +102,17 @@ body
   
 #tittlyLinks
   +columns(2)
-  +adjust-font-size-to(14px)
+  +adjust-font-size-to(18px)
   text-align: right
-  margin-right: -13px
+  margin-right: -30px
   margin-left: 15px
+  //border: solid 1px black
   ul
     padding-top: 60px
     list-style-type: none
     li
       a
-        text-decoration: none
+        +link-boxed( $darkblue, $white )
   
 #tittleBox
   +columns(12, 12)
@@ -368,9 +369,8 @@ body
     background-color: $lightblue
     
     &:hover, &:focus
-<<<<<<< HEAD
-      border: solid 4px $darkblue
-
+      border: solid 8px $darkblue
+      background-color: $darkblue
 
 //What We Do Specific ---------------------------
 #phaseHeader
@@ -402,9 +402,3 @@ body
 
 #subText
   margin-bottom: 15px
-  border: solid 8px $darkblue
-  background-color: $darkblue
-=======
-      border: solid 8px $darkblue
-      background-color: $darkblue
->>>>>>> e845f8e1b837423baadc93c9519ebff7cdb79d42
