@@ -89,7 +89,7 @@ body
   +columns(7,12)
   +prefix(3,12)
   +suffix(2,12)
-  +leader(2, 24px)
+  +leader(1, 24px)
 
 #tittleText
   color: $darkblue
@@ -277,12 +277,29 @@ body
   +omega(8)
   
 //Partners Page Specific  ------------------------
-#partner
-  margin: 0px
-  height: 300px
 
+#partnerContainer
+  +columns(10,12)
+  +prefix(1,12)
+  +suffix(1,12)
+  +leader(2, 24px)
+  //+omega
+
+#partnerLogoContainer
+  +columns(4,10)
+  
+.partnerName
+  +adjust-font-size-to(20px)
+  
+#partnerText
+  +columns(6,10)
+  +omega(10)
+  +trailer(1, 24px)
+  text-align: justify
+  
+  
 .partnerLogo
-  width: 300px
+  width: 280px
   margin-right: 12px
   margin-bottom: 12px
   
@@ -309,9 +326,3 @@ body
     
     &:hover, &:focus
       border: solid 4px $darkblue
-
-//What We Do Specific ---------------------------
-#phaseHeader
-  +adjust-font-size-to(24px)
-  margin-top: 25px
-  margin-bottom: 15px
