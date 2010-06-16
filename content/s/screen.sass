@@ -84,6 +84,7 @@ body
 #fullwidth
   +columns(12)
   +omega
+  +trailer(2, 24px)
 
 #text
   +columns(7,12)
@@ -215,16 +216,15 @@ body
     //background-color: $darkblue
     color: $white
   
-// Contact.html-specific code ----------------------------
+// Contact-specific code ----------------------------
 
 .formsplanation
   +adjust-font-size-to(20px)
 
 #formFlank
-  +columns(8)
-  +prefix(2)
-  +suffix(2)
-  +omega
+  +columns(8, 12)
+  +prefix(2, 12)
+  +suffix(2, 12)
   +leader(2, 24px)
   color: $offblack
   
@@ -255,7 +255,8 @@ body
       background-color: #FFF
     
   textarea
-    width: 250px
+    //width: 250px
+    width: 100%
     height: 150px
     border: 1px solid #B4B4B4
     margin: 0px 0px 10px 0px
@@ -264,17 +265,24 @@ body
     
   input.button
     width: 85px
-    height: 25px
+    height: 30px
     //top: -203px
     position: relative
     color: $white
     background-color: $lightblue
+
+#sendButton
+  +leader(5, 24px)
+  width: 100%
+  text-align: right
 
 #leftContact
   +columns(4,8)
 #rightContact
   +columns(4,8)
   +omega(8)
+  text-align: justify
+
   
 //Partners Page Specific  ------------------------
 
@@ -296,8 +304,7 @@ body
   +omega(10)
   +trailer(1, 24px)
   text-align: justify
-  
-  
+    
 .partnerLogo
   width: 280px
   margin-right: 12px

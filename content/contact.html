@@ -2,58 +2,64 @@
 title: Contact Us
 ---
 
-<div id="text">
-  <div id="tittleText">
-    Let's Get Together
+<div id="fullwidth">
+  <div id="text">
+    <div id="tittleText">
+      Let's Get Together
+    </div>
+
+    <div id="mainText" class="formsplanation"> 
+      Please call us at
+      <span style="color:green">508-577-5915</span> 
+      to see how we can help you to improve your business processes.
+      <br />
+      <br />
+      You can also fill out this form, and we will get back to you as soon as possible.
+    </div>
   </div>
 
-  <div id="whoStart" class="formsplanation"> 
-    Please call us at
-    <span style="color:green">508-577-5915</span> 
-    to see how we can help you to improve your business processes.
-    <br />
-    <br />
-    You can also fill out this form, and we will get back to you as soon as possible.
+  <div id="formFlank">
+    <form class="contactForm" name="contact" method="post" action=""> 
+      <fieldset> 
+        <legend>
+          Our Contact Form
+        </legend> 
+        <br> 
+        <div id="leftContact"> 
+          <div>Name:</div> 
+          <input type="text" name="name" id="name" maxlength="30" style="width:100%"/> 
+
+          <div>Area Code & Phone Number:</div> 
+          <input type="text" name="area_code" id="area_code" maxlength="3" size="3" style="width:30%"/> -
+          <input type="text" name="number"   id="number"   maxlength="8" size="8" style="width:65%"/> 
+
+          <div>E-mail:</div> 
+          <input type="text" name="email" id="email" maxlength="30" style="width:100%"/> 
+
+       	  <div>Comments:</div> 
+      	  <textarea name="comments" id="comments" maxlength="300" rows="4"></textarea> 
+        </div>
+      	<div id="rightContact"> 
+      	  <div>Company:</div> 
+      	  <input type="text" name="company" id="company" maxlength="30" style="width:100%"/> 
+
+      	  <div>Address Number & Street Name:</div> 
+      	  <input type="text" name="addr1" id="addr1" maxlength="30" style="width:100%"/> 
+
+      	  <div>Address Line Two:</div> 
+      	  <input type="text" name="addr2" id="addr2" maxlength="30" style="width:100%"/> 
+
+      	  <div>City, State, & ZIP:</div> 
+      	  <input type="text" name="city" id="city" maxlength="30" size="20" style="width:60%" />
+      	  <input type="text" name="state" id="state" maxlength="2" size="2" style="width:15%"/>
+      	  <input type="text" name="zip" id="zip" maxlength="5" size="5" style="width:22%"/> 
+      	   
+        
+          <div id="sendButton"> 
+            <input type="submit" name="submit" class="button" id="submit_btn" value="Send"/>
+          </div>
+        </div>
+      </fieldset> 
+    </form>
   </div>
-</div>
-
-<div id="formFlank">
-  <form class="contactForm" name="contact" method="post" action=""> 
-    <fieldset> 
-      <legend>
-        Our Contact Form
-      </legend> 
-      <br> 
-      <div id="leftContact"> 
-        <div>Name:</div> 
-        <input type="text" name="name" id="name" maxlength="30" /> 
-
-        <div>Area Code & Phone Number:</div> 
-        <input type="text" name="area_code" id="area_code" maxlength="3" size="3" /> -
-        <input type="text" name="number"   id="number"   maxlength="8" size="8" /> 
-
-        <div>E-mail:</div> 
-        <input type="text" name="email" id="email" maxlength="30" /> 
-
-     	  <div>Comments:</div> 
-    	  <textarea name="comments" id="comments" maxlength="300" rows="4"></textarea> 
-      </div>
-    	<div id="rightContact"> 
-    	  <div>Company:</div> 
-    	  <input type="text" name="company" id="company" maxlength="30" /> 
-
-    	  <div>Address Number & Street Name:</div> 
-    	  <input type="text" name="addr1" id="addr1" maxlength="30" /> 
-
-    	  <div>Address Line Two:</div> 
-    	  <input type="text" name="addr2" id="addr2" maxlength="30" /> 
-
-    	  <div>City, Zip & State:</div> 
-    	  <input type="text" name="city" id="city" maxlength="20" size="20" /> 
-    	  <input type="text" name="zip" id="zip" maxlength="5" size="5"/> 
-    	  <input type="text" name="state" id="state" maxlength="2" size="2"/> 
-      </div> 
-        <input type="submit" name="submit" class="button" id="submit_btn" value="Send"/>  
-    </fieldset> 
-  </form>
 </div>
