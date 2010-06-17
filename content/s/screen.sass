@@ -31,7 +31,7 @@ $darkblue   : #122b5e
 $darkerblue : #07183a
 $radius     : 6px
 
-//#page *
+#page *
   background-color: rgba(0, 0, 0, 0.125)
   
 // General styles
@@ -51,6 +51,7 @@ body
 
 #logo
   +columns(4,12)
+  margin-top: 0.5em
 #nav
   +columns(8,12)
   //+prefix(1,12)
@@ -81,6 +82,43 @@ body
   
 // General Purpose -------------------------------------
 
+#tittleBox
+  +columns(12)
+  //+prefix(1, 12)
+  //+suffix(0, 12)
+  +leader(1, 24px)
+  +omega
+
+#tittlyLinks
+  +columns(3,12)
+  +adjust-font-size-to(20px)
+  +leader(2, 24px)
+  text-align: right
+  
+  a
+    +link-boxed( $darkblue, $white )
+  //margin-right: -30px
+  //margin-left: 15px
+  //border: solid 1px black
+  
+  //ul
+    //padding-top: 60px
+    list-style-type: none
+    li
+      a
+        
+        
+#tittleText
+  +columns(8,12)
+  +suffix(1,12)
+  +adjust-font-size-to(60px)
+  +omega(12)
+  color: $darkblue
+  border-left: solid 12px $lightblue
+  padding-left: 12px
+  //margin-left: 24px
+  margin-right: -22px
+
 #fullwidth
   +columns(12)
   +omega
@@ -90,34 +128,6 @@ body
   +columns(7,12)
   +prefix(3,12)
   +suffix(2,12)
-  +leader(1, 24px)
-
-#tittleText
-  +columns(9)
-  color: $darkblue
-  +adjust-font-size-to(60px)
-  padding-left: 12px
-  border-left: solid 12px $lightblue
-  margin-left: 15px
-  
-#tittlyLinks
-  +columns(2)
-  +adjust-font-size-to(18px)
-  text-align: right
-  margin-right: -30px
-  margin-left: 15px
-  //border: solid 1px black
-  ul
-    padding-top: 60px
-    list-style-type: none
-    li
-      a
-        +link-boxed( $darkblue, $white )
-  
-#tittleBox
-  +columns(12, 12)
-  +prefix(1, 12)
-  +suffix(0, 12)
   +leader(1, 24px)
   
 #mainText
